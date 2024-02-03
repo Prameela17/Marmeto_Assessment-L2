@@ -32,15 +32,25 @@ a:hover {
 }
 a:active {
   transform: scale(0.98);
-}
- */
+} */
 
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700;800;900');
 html,
 body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+a:hover {
+  background: rgba(0, 0, 0, 0.23);
+  color: white;
+  transform: scale(1.03);
+  text-decoration: none;
+}
+a:active {
+  transform: scale(0.98);
 }
 
 .overalCart {
@@ -49,7 +59,6 @@ body {
   align-items: center;
 }
 .head {
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
 }
 .button {
@@ -57,21 +66,14 @@ body {
   border: none;
   height: 30px;
   cursor: pointer;
-  border-radius: 4px;
-  margin: -1px;
+  border-radius: 3px;
+  margin: -2px;
 }
-.button:hover{
+.button.active{
   background-color: black;
   border-color: black;
   color: white;
 }
-
-/* .product-cards{
-  position: relative;
-  display: flex;
-  justify-content: center;
-} */
-
 .product-cards {
   position: relative;
   display: flex;
@@ -79,14 +81,6 @@ body {
   justify-content: center;
   margin-top: 30px;
 }
-
-/* .tabContent {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 30px;
-} */
 .productImage {
   height: 240px;
   width: 180px;
@@ -96,11 +90,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-.margin {
+.badge-text {
   margin-top: -240px;
   margin-left: 20px;
   background-color: white;
-  width: 70px;
+  width: 85px;
   font-size: 10px;
   padding: 5px;
 }
@@ -115,7 +109,11 @@ body {
   font-size: 13px;
   margin-left: 12px;
   margin-right: 10px;
-  width: 90px;
+  width: 76px;
+  text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .titleAndBrand1 {
   display: flex;
@@ -134,13 +132,13 @@ body {
 
 .priceInfo {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   margin-left: 12px;
   margin-top: -20px;
 }
-.straik {
+.straike {
   color: gray;
-  margin-top: 14px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 .red {
@@ -154,4 +152,33 @@ body {
   border-radius: 5px;
   margin-top: -10px;
   height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.check{
+  display: none;
+}
+
+.no-badge{
+  visibility: hidden;
+}
+  
+@media screen and (max-width:767px) {
+  .menu{
+    display: flex;
+    width: 90%;
+  }
+  .button{
+    margin: 0px;
+  }
+  .check{
+    width: 48%;
+  }
+  .priceInfo p {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .cartButton{
+    width: 185px;
+  }
 }

@@ -5,204 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Products Card</title>
-
+    <link rel="shortcut icon" href="https://marmeto.com/cdn/shop/files/favicon_32x32.png?v=1644448186" type="image/png">
+    <title>Marmeto | Enabling Commerce</title>
 </head>
 
 <body>
     <!-- Your code goes here -->
     <div class="overalCart" id="overalCart">
         <h1 class="head"> SELECT YOUR CHOICE </h1>
-        <div>
-            <button id="men" class="button" onclick="openTab(event, 'men')">Men</button>
-            <button id="women" class="button" onclick="openTab(event, 'women')">Women</button>
-            <button id="kids" class="button" onclick="openTab(event, 'kids')">Kids</button>
+        <div class="menu">
+            <button id="men" class="button active men" onclick="openTab(event, 'men')">Men</button>
+            <button id="women" class="button women" onclick="openTab(event, 'women')">Women</button>
+            <button id="kids" class="button kids" onclick="openTab(event, 'kids')">Kids</button>
         </div>
 
         <div id="productCards" class="product-cards">
 
-            <!-- Men's product cards will be displayed here -->
+            <!-- Product cards will be dynamically added here -->
 
-            <div id="men" class="tabContent">
-                <div class="check">
-                    <img src="assets/premium_photo-1682090786689-741d60a11384.jpg" class="productImage">
-                    <p class="margin">Wedding Special</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Mens Kurta</h1>
-                        <ul><li class="brand">Manyvar</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1199.00</p>
-                        <del class="straik">1299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/27a1d087-dc81-46a0-9b86-505f6491b5931679431326265RoyalChallengersBangalore2023MensReplicaJersey1.avif" class="productImage">
-                    <div class="titleAndBrand1">
-                        <h1 class="title1">RCB Tshirt</h1>
-                        <ul><li class="brand">Puma</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 2199.00</p>
-                        <del class="straik">4299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/52d27507-a870-456b-addd-e62aefa0f79a1678911375020ESSLogoRegularFitMensT-Shirt1.avif" class="productImage">
-                    <p class="margin">On offer</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Green Charm</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1399.00</p>
-                        <del class="straik">1499.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/215a939a-b567-4110-9a2b-33d0e191d5c61690363492956-Ess-Multicolor-Mens-T-shirt-971690363492544-1.avif" class="productImage">
-                    <p class="margin">New season</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Mens Tshirt</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 599.00</p>
-                        <del class="straik">799.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Women's product cards will be displayed here -->
-            
-            <div id="women" class="tabcontent">
-                <div class="check">
-                    <img src="assets/cb1a5027-184f-4c8a-a96b-154987ff47f31692955360626-HERENOW-Women-Kurtis-1661692955360126-1.avif" class="productImage">
-                    <p class="margin">New season</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Women Kurti</h1>
-                        <ul><li class="brand">Manyvar</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1199.00</p>
-                        <del class="straik">1299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/55497e43-260c-4a3f-865b-059d9edd861a1659942435451-Women-Yellow-Cotton-Mandarin-Collar-Top-3841659942434972-1.avif" class="productImage">
-                    <div class="titleAndBrand1">
-                        <h1 class="title1">Yellow cas..</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 199.00</p>
-                        <del class="straik">299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/e50bd870-573d-4f6f-9ebc-938bda01edc31606382198225WomenBlackMultiColourPrintedKurti1.avif" class="productImage">
-                    <p class="margin">On offer</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Women Black.</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1399.00</p>
-                        <del class="straik">1499.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/4dc24e8c-f86c-4a85-80a3-a4941c84453b1659612869086METRO-FASHIONWomenBhandhaniPrintedKurtaandPantSetPureCotton1.avif" class="productImage">
-                    <p class="margin">New season</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">METRO-FAS.</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1599.00</p>
-                        <del class="straik">1799.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-            </div>
-
-            <!-- Kids' product cards will be displayed here -->
-
-            <div id="kids" class="tabcontent">
-                <div class="check">
-                    <img src="assets/85af90ad-db0a-47ee-b26f-4b2168cc31ae1618209422880ChiccoBoysWhite1.avif" class="productImage">
-                    <p class="margin">New season</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Women Kurti.</h1>
-                        <ul><li class="brand">Manyvar</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1199.00</p>
-                        <del class="straik">1299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/1fe8ff1f-6c80-402e-ac72-cbdccb8f77371632552170304Chicco1.avif" class="productImage">
-                    <div class="titleAndBrand1">
-                        <h1 class="title1">Yellow cas.</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 199.00</p>
-                        <del class="straik">299.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/167ed0a2-7936-4d1a-955b-dfff4e53f1281643289347488Tshirts1.avif" class="productImage">
-                    <p class="margin">On offer</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">Womem Blac.</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1399.00</p>
-                        <del class="straik">1499.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-                <div class="check">
-                    <img src="assets/ebeec264-7dea-4f8c-88ed-1b9ccd6c6a301681901675455-mothercare-Infant-Girls-Pink--Blue-Printed-Cotton-Top-490168-1.avif" class="productImage">
-                    <p class="margin">New season</p>
-                    <div class="titleAndBrand">
-                        <h1 class="title">METRO-FAS.</h1>
-                        <ul><li class="brand">Myntra</li></ul>
-                    </div>
-                    <div class="priceInfo">
-                        <p>RS 1599.00</p>
-                        <del class="straik">1799.00</del>
-                        <p class="red">50% off</p>
-                    </div>
-                    <button class="cartButton">Add to Cart</button>
-                </div>
-            </div>
-            
         </div>
-
     </div>
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
